@@ -1,0 +1,82 @@
+.container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0;
+    background-color: #f2f2f2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    flex: 0 0 50%;
+    height: 160px;
+    padding: 10px 5%;
+    background-color: white;
+    border-top: 1px solid lightgrey;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.upperPart {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+
+    align-self: flex-start;
+
+    margin: 0;
+    margin-right: 50px;
+    font-family: inherit;
+    color: gray;
+
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 113, 150);
+    margin: 8px 10px;
+}
+
+.upperPart > div > .links:first-child {
+    margin-left: 40px;
+}
+
+.social-media {
+    align-self: center;
+    width: 40%;
+    margin: 30px auto 20px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.media-link {
+    color: grey;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.sign {
+    align-self: center;
+    color: lightgray;
+}
+
+.sign > a {
+    color: rgb(0, 113, 150);
+    text-decoration: none;
+}
