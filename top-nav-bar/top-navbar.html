@@ -8,14 +8,14 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <!-- Custom styling sheet link -->
         <link href="top-navbar.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="resources/images/favicon.ico">
+        <link rel="icon" type="image/png" href="../resources/images/favicon.ico">
         <title>Questions - Java Arabic Community</title>
     </head>
     <body>
         <div class="top-nav logged-out">
             <div class="nav-leftSide">
                 <a href="#" class="logo-link" title="Home">
-                    <img src="resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
                     <p>Java Arabic Community</p>
                 </a>
             </div>
@@ -35,42 +35,34 @@
                 </a>
             </div>
         </div>
-        <div class="top-nav logged-in">
-            <div class="nav-leftSide">
-                <a href="#" class="logo-link" title="Home">
-                    <img src="resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
-                    <p>Java Arabic Community</p>
-                </a>
-            </div>
-            <div class="nav-middleSide">
-                <label for="nav-middleSide" class="search-label">Search questions</label>
-                <input type="text" name="queryText" id="search-input" class="nav-search-input">
-                <i class="fas fa-search" title="Search"></i>
-            </div>
-            <div class="nav-rightSide">
-                <div class="nav-user">
-                    <a href="#" class="nav-right-user-link" title="Show profile">
-                        <img src="resources/user.jpg" alt="profile img" class="nav-user-mini-img">
-                        <p class="nav-user-detail">
-                            Coder ACJHP
-                            12.12.2018
-                            <i class="fas fa-star"></i>25
-                        </p>
+        <div class="top-nav-container">
+            <div class="top-nav logged-in">
+                <div class="nav-leftSide">
+                    <a href="#" class="logo-link" title="Home">
+                        <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                        <p>Java Arabic Community</p>
                     </a>
-                    <i class="fas fa-envelope" title="Message box" id="trigger"></i>
-                    <div class="popover" role="tooltip" id="popover">
-                            <h3 class="popover-title">MESSAGE BOX</h3>
-                            <div class="popover-content-container">
-                                <div class="user-message">
-                                    <a href="#">
-                                        Lorem ipsum dolor sit amet consectetur !
-                                    </a>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    </p>
-                                </div>
-                                <div class="user-message">
+                </div>
+                <div class="nav-middleSide">
+                    <label for="nav-middleSide" class="search-label">Search questions</label>
+                    <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                    <i class="fas fa-search" title="Search"></i>
+                </div>
+                <div class="nav-rightSide">
+                    <div class="nav-user">
+                        <a href="#" class="nav-right-user-link" title="Show profile">
+                            <img src="../resources/user.jpg" alt="profile img" class="nav-user-mini-img">
+                            <p class="nav-user-detail">
+                                Coder ACJHP
+                                12.12.2018
+                                <i class="fas fa-star"></i>25
+                            </p>
+                        </a>
+                        <i class="fas fa-envelope" title="Message box" id="trigger"></i>
+                        <div class="popover" role="tooltip" id="popover">
+                                <h3 class="popover-title">MESSAGE BOX</h3>
+                                <div class="popover-content-container">
+                                    <div class="user-message">
                                         <a href="#">
                                             Lorem ipsum dolor sit amet consectetur !
                                         </a>
@@ -79,13 +71,23 @@
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
-                            </div>
+                                    <div class="user-message">
+                                            <a href="#">
+                                                Lorem ipsum dolor sit amet consectetur !
+                                            </a>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                </div>
+                        </div>
                     </div>
+                    <a href="#" class="nav-right-link" title="Register">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Sign out</span>
+                    </a>
                 </div>
-                <a href="#" class="nav-right-link" title="Register">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Sign out</span>
-                </a>
             </div>
         </div>
         <script src="top-navbar.js"></script>
