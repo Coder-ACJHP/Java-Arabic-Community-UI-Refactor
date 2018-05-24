@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- External font icons link -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <!-- Custom css sheet -->
+        <link href="template.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="top-nav-container">
+            <!-- Logged out navbar -->
+            <div class="top-nav">
+                <div class="nav-leftSide margin-seventy">
+                    <a href="#" class="logo-link" title="Home">
+                        <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                        <p>Java Arabic Community</p>
+                    </a>
+                </div>
+                <div class="nav-middleSide margin-seventy">
+                    <label for="nav-middleSide" class="search-label">Search questions</label>
+                    <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                    <i class="fas fa-search" title="Search"></i>
+                </div>
+                <div class="nav-rightSide">
+                    <a href="#" class="nav-right-link seperator" title="Log in">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Sign in
+                    </a>
+                    <a href="#" class="nav-right-link" title="Register">
+                        <i class="fas fa-user-plus"></i>
+                        Sign up
+                    </a>
+                </div>
+            </div>
+            <!-- Logged in navbar -->
+            <div class="top-nav hide">
+                <div class="nav-leftSide">
+                    <a href="#" class="logo-link" title="Home">
+                        <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                        <p>Java Arabic Community</p>
+                    </a>
+                </div>
+                <div class="nav-middleSide">
+                    <label for="nav-middleSide" class="search-label">Search questions</label>
+                    <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                    <i class="fas fa-search" title="Search"></i>
+                </div>
+                <div class="nav-rightSide">
+                    <div class="nav-user">
+                        <a href="#" class="nav-right-user-link" title="Show profile">
+                            <img src="../resources/user.jpg" alt="profile img" class="nav-user-mini-img">
+                            <p class="nav-user-detail">
+                                Coder ACJHP 12.12.2018
+                                <i class="fas fa-star"></i>25
+                            </p>
+                        </a>
+                        <i class="fas fa-envelope" title="Message box" id="trigger"></i>
+                        <div class="popover" role="tooltip" id="popover">
+                            <h3 class="popover-title">MESSAGE BOX</h3>
+                            <div class="popover-content-container">
+                                <div class="user-message">
+                                    <a href="#">
+                                        Lorem ipsum dolor sit amet consectetur !
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="user-message">
+                                    <a href="#">
+                                        Lorem ipsum dolor sit amet consectetur !
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-right-link" title="Register">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Sign out</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Body fixed container -->
+        <div class="static-container">
+        </div>
+        <!-- Sticky footer -->
+        <div class="footer">
+                <div class="upperPart">
+                    <h4 class="header"><img src="../resources/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community<br>Q &amp; A website</h4>
+                    <div style="align-self: center;">
+                            <a href="#" class="links" title="Contact us">CONTACT</a>
+                            <a href="#" class="links" title="About us">ABOUT US</a>
+                            <a href="#" class="links" title="Terms &amp; Conditions">TERMS AND CONDITIONS</a>
+                    </div>
+                </div>
+                <div class="social-media">
+                        <a href="#" class="media-link" title="Share on Facebook"> <i class="fab fa-facebook"></i></a> 
+                        <a href="#" class="media-link" title="Share on Twitter"> <i class="fab fa-twitter-square"></i></a> 
+                        <a href="#" class="media-link" title="Share on Google"> <i class="fab fa-google-plus-square"></i></a>
+                        <a href="#" class="media-link" title="Share on Instagram"> <i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="sign">© Copyright by <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
+        </div>
+    </body>
+</html>

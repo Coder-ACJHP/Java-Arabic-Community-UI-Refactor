@@ -2,7 +2,6 @@
     width: 100%;
     height: auto;
     position: absolute;
-    bottom: 0;
     left: 0;
     margin: 0 0;
     background-color: #f2f2f2;
@@ -45,10 +44,34 @@
 }
 
 .links {
+    position: relative;
     text-decoration: none;
     font-weight: bold;
     color: rgb(0, 113, 150);
     margin: 8px 10px;
+}
+
+.links::after,
+.sign > a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: -3px;
+    background: #0776B7;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.links:active::after,
+.links:hover::after,
+.sign > a:hover::after,
+.sign > a:active::after {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
 .upperPart > div > .links:first-child {
@@ -77,6 +100,7 @@
 }
 
 .sign > a {
+    position: relative;
     color: rgb(0, 113, 150);
     text-decoration: none;
 }
