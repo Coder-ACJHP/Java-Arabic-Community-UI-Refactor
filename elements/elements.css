@@ -781,6 +781,56 @@ body {
 }
 /** GENERAL TOOLS END */
 
+/** Elements Start here */
+.banner-full-width {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.banner-bg {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.banner-text {
+    width: 400px;
+    position: absolute;
+    top: 110px;
+    margin-left: 33vw;
+    color: #062f52b5;
+    font-weight: inherit;
+    font-size: 23px;
+    line-height: 140%;
+    text-align: center;
+}
+
+.join-us-btn {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    top: 350px;
+    margin-left: 22vw;
+    font-size: 20px;
+    color: #175a7d;
+    border: 1px solid #175a7d;
+    background-color: transparent;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.join-us-btn:hover {
+    color: white;
+    background-color: #175a7d;
+    transition: 0.3s;
+}
+
+/** Elements End here */
+
 /** RESPONSIVE PART */
 /* ----------- Non-Retina Screens ----------- */
 @media (min-width: 320px) and (max-width: 480px)  { 

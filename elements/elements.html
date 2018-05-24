@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- External font icons link -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-        <!-- Custom css sheet -->
-        <link href="template.css" rel="stylesheet">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="elements.css">
+    <title>Elements</title>
+</head>
+<body>
         <div class="top-nav-container">
             <!-- Logged out navbar -->
-            <div class="top-nav  hide">
+            <div class="top-nav">
                 <div class="nav-leftSide">
                     <a href="#" class="logo-link" title="Home">
                         <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
@@ -32,36 +30,6 @@
                     <a href="#" class="nav-right-link" title="Register">
                         <i class="fas fa-user-plus"></i>
                         Sign up
-                    </a>
-                </div>
-            </div>
-            <!-- Logged in navbar -->
-            <div class="top-nav">
-                <div class="nav-leftSide">
-                    <a href="#" class="logo-link" title="Home">
-                        <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
-                        <p>Java Arabic Community</p>
-                    </a>
-                </div>
-                <div class="nav-middleSide">
-                    <label for="nav-middleSide" class="search-label">Search : </label>
-                    <input type="text" name="queryText" id="search-input" class="nav-search-input">
-                    <i class="fas fa-search" title="Search"></i>
-                </div>
-                <div class="nav-rightSide">
-                    <div class="nav-user">
-                        <a href="#" class="nav-right-user-link" title="Show profile">
-                            <img src="../resources/user.jpg" alt="profile img" class="nav-user-mini-img">
-                            <p class="nav-user-detail">
-                                Coder ACJHP 12.12.2018
-                                <i class="fas fa-star"></i>25
-                            </p>
-                        </a>
-                        <i class="fas fa-envelope" title="Message box" id="trigger"></i>
-                    </div>
-                    <a href="#" class="nav-right-link" title="Register">
-                        <i class="fas fa-sign-out-alt"></i>
-                        <span>Sign out</span>
                     </a>
                 </div>
             </div>
@@ -100,6 +68,15 @@
         </div>
         <!-- Body fixed container -->
         <div class="static-container">
+
+            <div class="banner-full-width">
+                <img src="../resources/abstract-banner-bg.png" alt="no banner" class="banner-bg">
+                <p class="banner-text">
+                    J.A.C is a project open source and free, community of programmers helping each other.Join to us it only takes a minute:
+                </p>
+                <button class="join-us-btn">Join to us</button>
+            </div>
+
         </div>
         <!-- Sticky footer -->
         <div class="footer">
