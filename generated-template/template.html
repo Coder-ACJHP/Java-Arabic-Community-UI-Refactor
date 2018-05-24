@@ -12,15 +12,15 @@
     <body>
         <div class="top-nav-container">
             <!-- Logged out navbar -->
-            <div class="top-nav">
-                <div class="nav-leftSide margin-seventy">
+            <div class="top-nav  hide">
+                <div class="nav-leftSide">
                     <a href="#" class="logo-link" title="Home">
                         <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
                         <p>Java Arabic Community</p>
                     </a>
                 </div>
-                <div class="nav-middleSide margin-seventy">
-                    <label for="nav-middleSide" class="search-label">Search questions</label>
+                <div class="nav-middleSide">
+                    <label for="nav-middleSide" class="search-label">Search : </label>
                     <input type="text" name="queryText" id="search-input" class="nav-search-input">
                     <i class="fas fa-search" title="Search"></i>
                 </div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <!-- Logged in navbar -->
-            <div class="top-nav hide">
+            <div class="top-nav">
                 <div class="nav-leftSide">
                     <a href="#" class="logo-link" title="Home">
                         <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
@@ -44,7 +44,7 @@
                     </a>
                 </div>
                 <div class="nav-middleSide">
-                    <label for="nav-middleSide" class="search-label">Search questions</label>
+                    <label for="nav-middleSide" class="search-label">Search : </label>
                     <input type="text" name="queryText" id="search-input" class="nav-search-input">
                     <i class="fas fa-search" title="Search"></i>
                 </div>
@@ -94,7 +94,7 @@
         <div class="footer">
                 <div class="upperPart">
                     <h4 class="header"><img src="../resources/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community<br>Q &amp; A website</h4>
-                    <div style="align-self: center;">
+                    <div class="link-container">
                             <a href="#" class="links" title="Contact us">CONTACT</a>
                             <a href="#" class="links" title="About us">ABOUT US</a>
                             <a href="#" class="links" title="Terms &amp; Conditions">TERMS AND CONDITIONS</a>

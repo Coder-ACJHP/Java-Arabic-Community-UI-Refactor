@@ -87,14 +87,14 @@ body {
     border-right: none;
     background-color: transparent;
 
-    width:auto;
+    width:6vw;
     padding: 8px;
     align-self: center;
 }
 
 .nav-search-input {
 
-    width:260px;
+    width:auto;
     padding: 8px 35px 6.5px 10px;
     border: 1px solid white;
     border-top-right-radius: 3px;
@@ -252,58 +252,7 @@ body {
 .popover-content-container > .user-message:nth-child(odd) {
     background-color: rgb(241, 241, 241);
 }
-
-@media screen and (max-width:450px) {
-    .top-nav {
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-    .search-label {
-        font-size: 13px;
-        padding: 5px 10px 15px 10px;
-    }
-    .nav-search-input {
-        width: 55%;
-    }
-    .nav-user {
-        align-self: center;
-    }
-    .nav-right-link > span {
-        display: none;
-    }
-    .nav-right-link {
-        font-size: 40px;
-        margin: 0 auto 0 10px;
-    }
-    .nav-middleSide, .nav-rightSide {
-        margin-top: 8px;
-    }
-    .popover {
-        margin-left: -14px;
-        width: calc(90%);
-    }
-}
 /** Top navigation bar ended here */
-
-/** GENERAL TOOLS */
-.seperator {
-    border-right: 1px solid white;
-    padding-right: 13px;
-}
-
-.margin-seventy {
-    margin-right: 70px;
-}
-
-.margin-right-zero {
-    margin-right: 0;
-}
-
-.hide {
-    display: none;
-}
-/** GENERAL TOOLS END */
 
 /** MAIN STATIC CONTAINER */
 .static-container {
@@ -328,10 +277,9 @@ body {
 /** FOOTER START HERE */
 
 .footer {
-    width: 59%;
+    width: 60%;
     margin: 0 auto;
     height: auto;
-    padding: 10px;
     background-color: white;
     border-top: 0.1px solid #007196;
     display: flex;
@@ -352,6 +300,7 @@ body {
 
     align-self: flex-start;
 
+    width: 300px;
     margin: 10px 0;
     font-family: inherit;
     color: gray;
@@ -364,6 +313,16 @@ body {
 .header > img {
     width: 45px;
     height: 45px;
+}
+
+.link-container {
+
+    align-self: center;
+    width: auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .links {
@@ -415,13 +374,113 @@ body {
 
 .sign {
     font-size: 13px;
-    align-self: center;
+    text-align: center;
     color: #808080;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .sign > a {
     position: relative;
     color: rgb(0, 113, 150);
     text-decoration: none;
+}
+/** FOOTER END */
+
+/** GENERAL TOOLS */
+.seperator {
+    border-right: 1px solid white;
+    padding-right: 13px;
+}
+
+.margin-seventy {
+    margin-right: 70px;
+}
+
+.margin-right-zero {
+    margin-right: 0;
+}
+
+.hide {
+    display: none;
+}
+/** GENERAL TOOLS END */
+
+/** RESPONSIVE PART */
+/* ----------- Non-Retina Screens ----------- */
+@media (min-width: 320px) and (max-width: 480px)  { 
+    /* smartphones, iPhone, portrait 480x320 phones */
+    .top-nav {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-label {
+        width: auto;
+        font-size: 13px;
+        padding: 9.7px 5px;
+    }
+    .nav-search-input {
+        width: 55%;
+    }
+    .nav-user {
+        align-self: center;
+    }
+    .nav-right-link > span {
+        display: none;
+    }
+    .nav-right-link {
+        font-size: 20px;
+        margin: auto 5px;
+    }
+    .nav-middleSide, .nav-rightSide {
+        margin: 8px auto;
+        justify-content: end;
+    }
+    .popover {
+        margin-left: -14px;
+        width: calc(90%);
+    }
+
+    .static-container {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+    .upperPart {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        width: auto;
+    }
+    .link-container {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .links {
+        font-size: 12px;
+        flex: 0 0 auto;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px)  { 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    .links {
+        width: auto;
+        margin: 3px;
+    }
+}
+@media (min-width: 1281px) { 
+    /* hi-res laptops and desktops */ 
 }
