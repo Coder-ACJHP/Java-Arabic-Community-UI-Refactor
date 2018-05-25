@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- External font icons link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="elements.css">
     <title>Elements</title>
 </head>
 <body>
+        <div class="nav-bar" id="">
+            <a href="#" class="nav-name">
+                <img class="top-nav-icon" src="../resources/Jac-nav-logo.png" alt="no icon"> 
+                <span>Java Arabic Community</span>
+            </a>
+            <button class="toggler-btn" id="">
+                <img class="nav-img-toggle" src="../resources/toggler-button.png" alt="no icon">
+            </button>
+            <div id="collapsibleNavbar" style="display: none;">
+                <div class="nav-middleSide">
+                    <label for="nav-middleSide" class="search-label">Search : </label>
+                    <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                    <i class="fas fa-search" title="Search"></i>
+                </div>
+                <div class="nav-rightSide">
+                    <a href="#" class="nav-right-link seperator" title="Log in">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Sign in
+                    </a>
+                    <a href="#" class="nav-right-link" title="Register">
+                        <i class="fas fa-user-plus"></i>
+                        Sign up
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="top-nav-container">
             <!-- Logged out navbar -->
             <div class="top-nav">
@@ -69,6 +98,7 @@
         <!-- Body fixed container -->
         <div class="static-container">
 
+            <!-- Big Banner -->
             <div class="banner-full-width">
                 <img src="../resources/abstract-banner-bg.png" alt="no banner" class="banner-bg">
                 <p class="banner-text">
@@ -76,8 +106,74 @@
                 </p>
                 <button class="join-us-btn">Join to us</button>
             </div>
+            
+            <div id="element-holder">
+                <!-- Navigation Tabs -->
+                <ul class="nav nav-tabs">
+                    <li id="active">
+                        <a href="#">All Questions</a>
+                    </li>
+                    <li>
+                        <a href="#">Top Questions</a>
+                    </li>
+                    <li>
+                        <a href="#">Users</a>
+                    </li>
+                    <li>
+                        <a href="#">Info</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="element-holder">
+                    <button type="button" class="askQuestion-btn">Ask question</button>
+            </div>
+            
+            <div id="element-holder">
+                <div class="question-card"> <!-- QUESTION CARD -->
+                    <div class="counter-holder">  <!-- LEFT SİDE -->
+                        <div class="counter counter-gold">
+                            <br> 0
+                            <br> Vote(s)
+                        </div>
+                        <div class="counter counter-blue">
+                            <br> 0
+                            <br> Answer(s)
+                        </div>
+                    </div>
+                    <div class="question-card-detail">  <!-- RIGHT SİDE -->
+                        <a class="question-header">
+                                How to resize a shape with mouse in Java?
+                        </a>
+                        <p class="question-detail">
+                            I can draw, select and move shapes like rectangle and ellipses.I also want to let the user resize his shape
+                        </p>
+                        <div class="question-card-inner-down-side">
+                            <div class="question-card-tags-holder">
+                                    <a class="tags" target="_blank">Java</a>
+                                    <a class="tags" target="_blank">Java</a>
+                                    <a class="tags" target="_blank">Java</a>
+                                    <a class="tags" target="_blank">Java</a>
+                            </div>
+                            <div class="user-card">
+                                <img src="../resources/user.jpg" alt="No prof image" class="user-profile-img">
+                                <div class="user-card-detail">
+                                        <div class="user-title">
+                                                <a href="/Users?answerUserId=24">Coder ACJHP</a>
+                                            </div>
+                                            <br>
+                                            <div class="user-detail">asked : 2018-04-19</div>
+                                            <div id="badge-vote">♕
+                                                <font style="color:black;">0</font>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </div>
+            </div>
         <!-- Sticky footer -->
         <div class="footer">
             <div class="upperPart">
@@ -107,6 +203,6 @@
             <p class="sign">© Copyright by
                 <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
         </div>
-        <script src="template.js"></script>
+        <script src="elements.js"></script>
     </body>
 </html>

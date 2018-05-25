@@ -205,6 +205,12 @@
   }
   
   /**
+   * Restore all links (undecorated).
+   */
+a {
+    text-decoration: none;
+}
+  /**
    * Restore the focus styles unset by the previous rule.
    */
   
@@ -356,11 +362,16 @@ html {
 /** BODY & CONTAINER START HERE */
 body {
     width: 99vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
     font-family: inherit;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 /** Top navigation bar started here */
@@ -637,7 +648,7 @@ body {
 .static-container {
     width: 60%;
     height: auto;
-    min-height: 77vh;
+    min-height: 79%; 
     margin: 0 auto;
     background-color: white;
     box-shadow: 0px 0px 15px 3px #e9e9e9;
@@ -656,6 +667,9 @@ body {
 /** FOOTER START HERE */
 
 .footer {
+
+    align-self: flex-end;
+
     width: 60%;
     margin: 0 auto;
     height: auto;
@@ -776,6 +790,11 @@ body {
     padding-right: 13px;
 }
 
+#element-holder {
+    margin: 40px auto;
+    padding: 0%;
+}
+
 .hide {
     display: none;
 }
@@ -787,6 +806,10 @@ body {
     height: 400px;
     overflow: hidden;
     z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner-bg {
@@ -799,12 +822,14 @@ body {
     width: 400px;
     position: absolute;
     top: 110px;
-    margin-left: 33vw;
+    align-self: end;
     color: #062f52b5;
     font-weight: inherit;
     font-size: 23px;
     line-height: 140%;
     text-align: center;
+    text-shadow: 1px 1px 1px lightgray;
+    margin-right: 50px;
 }
 
 .join-us-btn {
@@ -812,8 +837,6 @@ body {
     width: 250px;
     height: auto;
     padding: 15px;
-    top: 350px;
-    margin-left: 22vw;
     font-size: 20px;
     color: #175a7d;
     border: 1px solid #175a7d;
@@ -821,6 +844,8 @@ body {
     border-radius: 3px;
     outline: 0;
     cursor: pointer;
+    align-self: center;
+    margin-top: 250px;
 }
 
 .join-us-btn:hover {
@@ -829,13 +854,290 @@ body {
     transition: 0.3s;
 }
 
+.question-card {
+    width: 100%;
+    height: auto;
+    border: 0.3px solid lightgray;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/** card left side */
+.counter-holder {
+    flex: 0 0 10%;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid lightgray;
+
+    font-size: 10px;
+}
+
+.counter-red {
+    border: 1px solid rgb(173, 0, 0);
+}
+
+.counter-blue {
+    border: 1px solid #175a7d;
+}
+
+.counter-gold {
+    border: 1px solid rgb(173, 170, 0);
+}
+
+/** card right side */
+.question-card-detail {
+    flex: 0 0 90%;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.question-header {
+    color: #175a7d;
+    text-decoration: none !important;
+    font-size: 16px;
+}
+.question-detail {
+    overflow: hidden;
+    font-size: 13px;
+    margin-top: 5px;
+    height: 20px;
+    color: #3b4045;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.question-card-inner-down-side {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.question-card-tags-holder {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.tags {
+    background-color: #74ddff;
+    text-decoration: none;
+    color: #1d2ea4;
+    font-size: 12px;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 5px;
+}
+
+.user-card {
+    width: 165px;
+    height: 57px;
+    border: 1px solid #E0EAF1;
+    background-color: #E0EAF1;
+
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.user-profile-img {
+    width: 48px;
+    height: 48px;
+    margin: 3px;
+}
+
+.user-card-detail {
+    width: 100%;
+    margin-top: 3px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-title {
+    color: #007196;
+    font-size: 14px;
+}
+.user-detail {
+    font-size: 10px;
+}
+#badge-vote {
+    color: rgb(173, 170, 0);
+}
+/** MINI NAVBAR FOR MOBILES */
+.nav-bar {
+    display: none;
+    position: relative;
+    width: 100vw;
+    height: 55px;
+    top: 0;
+    left: 0;
+    background-color: #007196;
+    z-index: 2;
+}
+#nav-bar-border {
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+}
+.toggler-btn {
+    float: right;
+    margin: 5px 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline-width: 0;
+    transition: 0.5s;
+}
+#toggler-btn-rotated {
+    float: right;
+    margin: 5px 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    transform: rotate(90deg);
+}
+.nav-name {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 25px;
+    padding-top: 8px;
+    width: 100px;
+}
+.nav-img-toggle {
+    width: 50px;
+    height: 50px;
+}
+#collapsibleNavbar {
+    display: none;
+    width: 100vw;
+    background-color: #007196;
+    margin-top: 3px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    
+}
+
+.nav-tabs {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.nav-tabs > li {
+    color: lightgrey;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+
+    border: 1px solid transparent;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+
+    cursor: pointer;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-tabs > li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.nav-tabs > li > a {
+    color: #007196;
+    text-decoration: none;
+}
+
+#active {
+    position: relative;
+    border: 1px solid lightgray;
+}
+
+#active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -3px;
+    left: 0;
+    border-bottom: 3px solid white;
+}
+
+.askQuestion-btn {
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: #007196;
+    border: none;
+    border-radius: 2px;
+
+    -ms-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.askQuestion-btn:hover {
+    cursor: pointer;
+    background-color: #175a7d;
+}
+
 /** Elements End here */
 
 /** RESPONSIVE PART */
 /* ----------- Non-Retina Screens ----------- */
 @media (min-width: 320px) and (max-width: 480px)  { 
     /* smartphones, iPhone, portrait 480x320 phones */
+    .nav-bar {
+        display: block;
+    }
     .top-nav {
+        display: none;
         width: 90%;
         height: auto;
         flex-direction: column;
@@ -892,12 +1194,32 @@ body {
         font-size: 12px;
         flex: 0 0 auto;
     }
+
+    .banner-full-width {
+        height: 200px;
+    }
+    .banner-bg {
+        width: auto;
+    }
+    .banner-text {
+        margin: 0 auto;
+        font-size: 14px;
+        width: 100%;
+        color: #385b7f;
+        text-shadow: none;
+    }
+    .join-us-btn {
+        margin-top: 100px;
+        padding: 15px;
+        width: 200px;
+    }
 }
 @media (min-width: 481px) and (max-width: 767px)  { 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
     .top-nav, 
     .static-container,
     .footer {
+        display: block;
         width: 700px;
     }
 
@@ -910,6 +1232,7 @@ body {
     .top-nav, 
     .static-container,
     .footer {
+        display: block;
         width: 1000px;
     }
 }
@@ -930,13 +1253,5 @@ body {
     .links {
         width: auto;
         margin: 3px;
-    }
-}
-@media (min-width: 1281px) { 
-    /* hi-res laptops and desktops */ 
-    .top-nav, 
-    .static-container,
-    .footer {
-        width: 1000px;
     }
 }
