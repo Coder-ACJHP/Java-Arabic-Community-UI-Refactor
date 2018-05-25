@@ -356,7 +356,8 @@ html {
 /** BODY & CONTAINER START HERE */
 body {
     width: 99vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
