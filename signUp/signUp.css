@@ -777,6 +777,14 @@ select.selectInput:focus {
     background-repeat: no-repeat;
     outline: 0;
 }
+
+/** Delete Chrome autofill background color */
+input.customInput, 
+input.selectInput:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
 .col {
     width: 100%;
     height: auto;
@@ -789,7 +797,7 @@ select.selectInput:focus {
 
 .col > label {
     
-    color: rgb(197, 197, 197);
+    color: rgb(189, 189, 189);
     font-size: 16px;
     margin-bottom: -10px;
     font-family: inherit;    
@@ -815,7 +823,7 @@ select.selectInput:focus {
 }
 .signUp-formLink {
 
-    color: lightgray;
+    color: rgb(199, 199, 199);
     font-size: inherit;
     text-decoration: none;
     font-size: 13px;
@@ -1054,6 +1062,32 @@ select.selectInput:focus {
     .links {
         font-size: 12px;
         flex: 0 0 auto;
+    }
+    .inner-container {
+        flex-flow: row wrap;
+        width: 100%;
+        margin: auto auto;
+    }
+    #signUp-form {
+        width: 80%;
+        margin: 5% auto;
+        border-radius: 2px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .signUp-header-text {
+        width: auto;
+    }
+    .customInput {
+        width: auto;
+    }
+    .fileInput, .dateInput {
+        width: 71%;
+    }
+    .selectInput {
+        width: 91%;
     }
 }
 @media (min-width: 481px) and (max-width: 767px)  { 
