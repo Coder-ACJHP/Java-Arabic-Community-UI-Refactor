@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External font icons link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <!-- Custom css sheet -->
+    <link href="signUp.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-nav-container">
+        <!-- Logged out navbar -->
+        <div class="top-nav">
+            <div class="nav-leftSide">
+                <a href="#" class="logo-link" title="Home">
+                    <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <p>Java Arabic Community</p>
+                </a>
+            </div>
+            <div class="nav-middleSide">
+                <label for="nav-middleSide" class="search-label">Search : </label>
+                <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                <i class="fas fa-search" title="Search"></i>
+            </div>
+            <div class="nav-rightSide">
+                <a href="#" class="nav-right-link seperator" title="Log in">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign in
+                </a>
+                <a href="#" class="nav-right-link" title="Register">
+                    <i class="fas fa-user-plus"></i>
+                    Sign up
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Body fixed container -->
+    <div class="static-container">
+        <!-- LOGIN HEADER TEXT -->
+        <div class="signUp-header">
+            <h3 class="signUp-header-text">Create your Java Arabic Community account. It's free and only takes a minute. </h3>
+        </div>
+
+        <div class="inner-container">
+            <div class="leftImage-container">
+                <img src="../resources/user.jpg" alt="No user profile image" class="big-prof-img">
+                <label id="user-nickName">Coder ACJHP</label>
+            </div>
+            <form action="#" method="post" id="signUp-form">
+                <div class="col">
+                    <label for="name">First name : </label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" id="name" class="customInput" placeholder="Onur">
+                </div>
+                <div class="col">
+                    <label for="lastName">Last name : </label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="lastName" id="lastName" class="customInput" placeholder="Işık">
+                </div>
+                <div class="col">
+                    <label for="nickName">Nick name : </label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="nickName" id="nickName" class="customInput" placeholder="Coder ACJHP">
+                </div>
+                <div class="col">
+                    <label for="email">Email : </label>
+                    <i class="fas fa-at"></i>
+                    <input type="email" name="email" id="email" class="customInput" placeholder="you@example.net">
+                </div>
+                <div class="col">
+                    <label for="password">Password : </label>
+                    <i class="fas fa-key"></i>
+                    <input type="password" name="password" id="password" class="customInput" placeholder="**********">
+                </div>
+                <div class="col">
+                    <label for="birthDate">Birth date : </label>
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" name="birthDate" id="birthDate" class="customInput" placeholder="25.03.1988">
+                </div>
+                <div class="col">
+                    <label for="COUNTRY">Country : </label>
+                    <i class="fas fa-globe"></i>
+                    <select id="COUNTRY" name="COUNTRY" class="customInput selectInput" required="required">
+                       <option value="IQ">Iraq</option>
+                       <option value="TR">Turkey</option>
+                       <option value="UAE">United Arab Emirates</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="favLanguages">Favorite programming languages : </label>
+                    <i class="fab fa-codepen"></i>
+                    <input type="text" name="favLanguages" id="favLanguages" class="customInput" placeholder="Java, Js, Python">
+                </div>
+                <div class="col">
+                    <label for="profilePic">Profile image : </label>
+                    <i class="fas fa-image"></i>
+                    <input type="file" name="profilePic" id="profilePic" class="customInput fileInput">
+                </div>
+                <div class="col flux">
+                    <a href="#" class="signUp-formLink">Already have an account?
+                        <span>Log in</span>
+                    </a>
+                    <input type="submit" value="Sign Up" class="signUp-button">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- Sticky footer -->
+    <div class="footer">
+        <div class="upperPart">
+            <h4 class="header">
+                <img src="../resources/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
+                <br>Q &amp; A website</h4>
+            <div class="link-container">
+                <a href="#" class="links" title="Contact us">CONTACT</a>
+                <a href="#" class="links" title="About us">ABOUT US</a>
+                <a href="#" class="links" title="Terms &amp; Conditions">TERMS AND CONDITIONS</a>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="media-link" title="Share on Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Twitter">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Google">
+                <i class="fab fa-google-plus-square"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="sign">© Copyright by
+            <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
+    </div>
+    <script>
+        var nickName = document.getElementById('nickName');
+        if (nickName) {
+            nickName.addEventListener('input', ()=> {
+                document.getElementById('user-nickName').innerHTML = nickName.value;
+            });
+        }
+
+        let profilePicEl = document.getElementById('profilePic');
+        let loadImage = document.querySelector('.loading-overlay');
+        if (profilePicEl) {
+            profilePicEl.addEventListener('change', ()=> {
+                const profilePicFile = profilePicEl.files[0];
+                const fileReader = new FileReader();
+                fileReader.onload = ()=> {
+                    document.querySelector('.big-prof-img').setAttribute('src', fileReader.result);
+                }
+                fileReader.readAsDataURL(profilePicFile);
+            });
+        }
+
+       
+    </script>
+</body>
+</html>
