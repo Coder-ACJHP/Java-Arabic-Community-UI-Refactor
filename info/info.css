@@ -655,133 +655,46 @@ body {
 }
 
 
-/** ASK QUESTION START HERE */
-::placeholder {
-    font-size: 13px;
-    color: #e9e9e9;
-}
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    font-size: 13px;
-    color: #e9e9e9;
-}
 
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: red;font-size: 13px;
-   color: #e9e9e9;
-}
-.divider-container {
+
+
+/** INFO START HERE */
+.jumbotron {
     width: 90%;
-    margin: 3% auto;
+    margin: 0;
+    padding: 5%;
+    text-align: left;
+    background: #DEDEDE;
+
     display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-#askingForm {
-    flex: 0 0 70%;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.customInput {
-
-    width: 81%;
-    height: 30px;
-    padding: 5px 5px 5px 50px;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-    outline: 0;
-
-    font-size: 16px;
-    transition: .3s;
-    -ms-transition: .3s;
-    -moz-transition: .3s;
-    -webkit-transition: .3s;
-}
-
-.customInput:focus {
-    border-color: #47cbfc;
-    box-shadow: 0px 0px 5px 1px #79dbffb3;
-}
-#mytextarea {
-    min-height: 300px;
-    padding-top: 12px;
-}
-/** Delete Chrome autofill background color */
-input.customInput, 
-input.selectInput:-webkit-autofill, 
-textarea:-webkit-autofill, 
-select:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px white inset;
-}
-.col {
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.col > label {
-    
-    color: rgb(189, 189, 189);
-    font-size: 16px;
-    margin-bottom: -10px;
-    font-family: inherit;    
-}
-
-.col:last-of-type {
-    flex-direction: row;
     justify-content: space-between;
 }
-.col > i, i.fas.fa-user {
-    position: relative;
-    top: 30px;
-    left: 10px;
-    padding-right: 15px;
-    color: #0c2160;
-    border-right: 1px solid lightgray;
+.jumbotron-header {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin: 10px 0;
 }
-
-.flux {
-    flex-direction: row;
-    justify-content: space-between;
+.jumbotron-detail {
+    color: #6e6e6e;
+    line-height: 1.6em;
 }
-.askQuestion-formLink {
-
-    color: rgb(199, 199, 199);
-    font-size: inherit;
-    text-decoration: none;
-    font-size: 13px;
-    margin-right: 45px;
-
-}
-
-.askQuestion-formLink:hover, 
-.askQuestion-formLink:active {
-    color: rgb(197, 191, 191);
-}
-
-.askQuestion-formLink > span {
-    color: #007096;
-}
-
-.postQuestion-button {
+.postSuggestion-button {
     
+    margin-left: auto;
+
     width: 235px;
     height: 42px;
     margin-right: auto;
     
-    color: lightgray;
+    color: #007196;
     font-size: 16px;
     
     background-color: transparent;
-    border: 1px solid lightgray;
+    border: 1px solid #007196;
     border-radius: 3px;
     outline: 0;
     cursor: pointer;
@@ -793,7 +706,7 @@ select:-webkit-autofill {
     
 }
 
-.postQuestion-button:hover {
+.postSuggestion-button:hover {
     background-color: #007096;
     border: 1px solid transparent;
     color: white;
@@ -803,35 +716,61 @@ select:-webkit-autofill {
     display: none;
     animation: a 2s infinite linear;
 }
-.info-sticker {
-    flex: 0 0 30%;
-    align-self: flex-start;
-    padding: 10px;
-    text-align: left;
-    border:none;
-    border: 1px solid #e6f2ff;
-    background-color: #d8eafc;
-    color: #0c2160;
-}
-.info-sticker > p {
-    font-size: 14px;
-    line-height: 1.5em;
-}
-.sticker-header {
+.info-cards-container {
+    width: 90%;
+    margin: 3% auto;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-.sticker-header > h3 {
-    margin: 5px;
+.info-card {
+    width: 300px;
+    margin: 0 30px 0 0;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.sticker-header > span {
-    cursor: pointer;
-    margin-left: auto;
-    text-decoration: none;
+.info-card-top {
+    width: 100%;
+    color: #a8a8a8;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #688892;
 }
-/** ASK QUESTION END HERE */
+.mini-img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 10px 0;
+    padding: 4px;
+    border: 1px solid #DEDEDE;
+}
+.info-card-detail {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #979797;
+    line-height: 1.6em;
+    font-size: 13px;
+}
+.info-card-link {
+    align-self: flex-end;
+}
+/** INFO END HERE */
+
+
+
+
+
+
+
+
+
 
 /** FOOTER START HERE */
 
@@ -1022,10 +961,6 @@ select:-webkit-autofill {
         font-size: 12px;
         flex: 0 0 auto;
     }
-    .divider-container {
-        flex-direction: column;
-        flex-direction: column-reverse; 
-    }
 }
 @media (min-width: 481px) and (max-width: 767px)  { 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
@@ -1064,13 +999,5 @@ select:-webkit-autofill {
     .links {
         width: auto;
         margin: 3px;
-    }
-}
-@media (min-width: 1281px) { 
-    /* hi-res laptops and desktops */ 
-    .top-nav, 
-    .static-container,
-    .footer {
-        width: 1000px;
     }
 }
