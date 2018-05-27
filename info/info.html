@@ -1,103 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- External font icons link -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-        <!-- Custom css sheet -->
-        <link href="info.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="top-nav-container">
-            <!-- Logged out navbar -->
-            <div class="top-nav">
-                <div class="nav-leftSide">
-                    <a href="#" class="logo-link" title="Home">
-                        <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
-                        <p>Java Arabic Community</p>
-                    </a>
-                </div>
-                <div class="nav-middleSide">
-                    <label for="nav-middleSide" class="search-label">Search : </label>
-                    <input type="text" name="queryText" id="search-input" class="nav-search-input">
-                    <i class="fas fa-search" title="Search"></i>
-                </div>
-                <div class="nav-rightSide">
-                    <a href="#" class="nav-right-link seperator" title="Log in">
-                        <i class="fas fa-sign-in-alt"></i>
-                        Sign in
-                    </a>
-                    <a href="#" class="nav-right-link" title="Register">
-                        <i class="fas fa-user-plus"></i>
-                        Sign up
-                    </a>
-                </div>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External font icons link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <!-- Custom css sheet -->
+    <link href="info.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-nav-container">
+        <!-- Logged out navbar -->
+        <div class="top-nav">
+            <div class="nav-leftSide">
+                <a href="#" class="logo-link" title="Home">
+                    <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <p>Java Arabic Community</p>
+                </a>
+            </div>
+            <div class="nav-middleSide">
+                <label for="nav-middleSide" class="search-label">Search : </label>
+                <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                <i class="fas fa-search" title="Search"></i>
+            </div>
+            <div class="nav-rightSide">
+                <a href="#" class="nav-right-link seperator" title="Log in">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign in
+                </a>
+                <a href="#" class="nav-right-link" title="Register">
+                    <i class="fas fa-user-plus"></i>
+                    Sign up
+                </a>
             </div>
         </div>
-        <!-- Body fixed container -->
-        <div class="static-container">
+    </div>
+    <!-- Body fixed container -->
+    <div class="static-container">
 
-            <div class="jumbotron">
-                <h1 class="jumbotron-header">
-                    learn, share, build
-                </h1>
-                <p class="jumbotron-detail">
-                    Founded in 2016, Java Arabic Community is the stable, most trusted online community for developers to learn, share their
-                    knowledge, and build their careers. More than N professional and aspiring programmers visit Java Arabic Community each
-                    month to help solve coding problems, develop new skills.
-                </p>
-                <button type="submit" class="postSuggestion-button" onclick="document.querySelector('.fas.fa-spinner').style.display='inline-block';">
-                        <i class="fas fa-spinner"></i> &nbsp;Send feedback
-                </button> 
-            </div>
+        <div class="jumbotron">
+            <h1 class="jumbotron-header">
+                learn, share, build
+            </h1>
+            <p class="jumbotron-detail">
+                Founded in 2016, Java Arabic Community is the stable, most trusted online community for developers to learn, share their
+                knowledge, and build their careers. More than N professional and aspiring programmers visit Java Arabic Community
+                each month to help solve coding problems, develop new skills.
+            </p>
+            <button type="submit" class="postSuggestion-button" onclick="document.querySelector('.fas.fa-spinner').style.display='inline-block';">
+                <i class="fas fa-spinner"></i> &nbsp;Send feedback
+            </button>
+        </div>
 
-            <div class="info-cards-container">
-                <div class="info-card">
-                    <h2 class="info-card-top">maven</h2>
-                    <div class="info-card-bottom">
-                        <img src="../resources/maven.png" alt="No icon-image" class="mini-img">
-                        <div class="info-card-detail">
-                            Apache Maven bir yazılım proje yönetimi ve anlama aracıdır. Bir proje nesne modeli (POM) kavramına dayanan Maven, bir projenin
-                            yapısını, raporlamasını ve belgelerini merkezi bir bilgi parçasından yönetebilir.Maven'ın projenize yardımcı olabileceğini
-                            düşünüyorsanız, navigasyonun "Maven Hakkında" bölümünde daha fazla bilgi bulabilirsiniz.
-                        </div>
+        <div class="info-cards-container">
+            <div class="info-card">
+                <h2 class="info-card-top">java ee</h2>
+                <div class="info-card-bottom">
+                    <img src="../resources/java-ee.png" alt="No icon-image" class="mini-img">
+                    <div class="info-card-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
+                        Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
+                        eu imperdiet ex. Vivamus in ante id nulla suscipit tempor. Donec consequat porta tellus, eget lacinia
+                        quam.Donec est lectus, mattis a arcu non, vestibulum tincidunt justo. Curabitur gravida, est in mattis
+                        posuere, lacus quam pretium erat
                     </div>
-                    <a href="#" class="links info-card-link">Read More</a>
                 </div>
+                <a href="#" class="links info-card-link">Read More</a>
             </div>
+            <div class="info-card">
+                <h2 class="info-card-top">spring</h2>
+                <div class="info-card-bottom">
+                    <img src="../resources/spring.svg" alt="No icon-image" class="mini-img">
+                    <div class="info-card-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
+                        Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
+                        eu imperdiet ex. Vivamus in ante id nulla suscipit tempor. Donec consequat porta tellus, eget lacinia
+                        quam.Donec est lectus, mattis a arcu non, vestibulum tincidunt justo. Curabitur gravida, est in mattis
+                        posuere, lacus quam pretium erat
+                    </div>
+                </div>
+                <a href="#" class="links info-card-link">Read More</a>
+            </div>
+            <div class="info-card">
+                <h2 class="info-card-top">hibernate</h2>
+                <div class="info-card-bottom">
+                    <img src="../resources/hibernate.png" alt="No icon-image" class="mini-img">
+                    <div class="info-card-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
+                        Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
+                        eu imperdiet ex. Vivamus in ante id nulla suscipit tempor. Donec consequat porta tellus, eget lacinia
+                        quam.Donec est lectus, mattis a arcu non, vestibulum tincidunt justo. Curabitur gravida, est in mattis
+                        posuere, lacus quam pretium erat
+                    </div>
+                </div>
+                <a href="#" class="links info-card-link">Read More</a>
+            </div>
+            <div class="info-card">
+                <h2 class="info-card-top">maven</h2>
+                <div class="info-card-bottom">
+                    <img src="../resources/maven.png" alt="No icon-image" class="mini-img">
+                    <div class="info-card-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
+                        Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
+                        eu imperdiet ex. Vivamus in ante id nulla suscipit tempor. Donec consequat porta tellus, eget lacinia
+                        quam.Donec est lectus, mattis a arcu non, vestibulum tincidunt justo. Curabitur gravida, est in mattis
+                        posuere, lacus quam pretium erat
+                    </div>
+                </div>
+                <a href="#" class="links info-card-link">Read More</a>
+            </div>
+            <div class="info-card">
+                <h2 class="info-card-top">heroku</h2>
+                <div class="info-card-bottom">
+                    <img src="../resources/heroku.jpg" alt="No icon-image" class="mini-img">
+                    <div class="info-card-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
+                        Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
+                        eu imperdiet ex. Vivamus in ante id nulla suscipit tempor. Donec consequat porta tellus, eget lacinia
+                        quam.Donec est lectus, mattis a arcu non, vestibulum tincidunt justo. Curabitur gravida, est in mattis
+                        posuere, lacus quam pretium erat
+                    </div>
+                </div>
+                <a href="#" class="links info-card-link">Read More</a>
+            </div>
+            <div class="info-card">
+                <h2 class="info-card-top">Javascript</h2>
+                <div class="info-card-bottom">
+                    <img src="../resources/javascript.jpg" alt="No icon-image" class="mini-img">
+                    <div class="info-card-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
+                        Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
+                        eu imperdiet ex. Vivamus in ante id nulla suscipit tempor. Donec consequat porta tellus, eget lacinia
+                        quam.Donec est lectus, mattis a arcu non, vestibulum tincidunt justo. Curabitur gravida, est in mattis
+                        posuere, lacus quam pretium erat
+                    </div>
+                </div>
+                <a href="#" class="links info-card-link">Read More</a>
+            </div>
+            <div class="info-card">
+                <h2 class="info-card-top">tinymce</h2>
+                <div class="info-card-bottom">
+                    <img src="../resources/tinymce.jpg" alt="No icon-image" class="mini-img">
+                    <div class="info-card-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
+                        Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
+                        eu imperdiet ex. Vivamus in ante id nulla suscipit tempor. Donec consequat porta tellus, eget lacinia
+                        quam.Donec est lectus, mattis a arcu non, vestibulum tincidunt justo. Curabitur gravida, est in mattis
+                        posuere, lacus quam pretium erat
+                    </div>
+                </div>
+                <a href="#" class="links info-card-link">Read More</a>
+            </div>
+        </div>
 
-        </div>
-        <!-- Sticky footer -->
-        <div class="footer">
-            <div class="upperPart">
-                <h4 class="header">
-                    <img src="../resources/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
-                    <br>Q &amp; A website</h4>
-                <div class="link-container">
-                    <a href="#" class="links" title="Contact us">CONTACT</a>
-                    <a href="#" class="links" title="About us">ABOUT US</a>
-                    <a href="#" class="links" title="Terms &amp; Conditions">TERMS AND CONDITIONS</a>
-                </div>
+    </div>
+    <!-- Sticky footer -->
+    <div class="footer">
+        <div class="upperPart">
+            <h4 class="header">
+                <img src="../resources/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
+                <br>Q &amp; A website</h4>
+            <div class="link-container">
+                <a href="#" class="links" title="Contact us">CONTACT</a>
+                <a href="#" class="links" title="About us">ABOUT US</a>
+                <a href="#" class="links" title="Terms &amp; Conditions">TERMS AND CONDITIONS</a>
             </div>
-            <div class="social-media">
-                <a href="#" class="media-link" title="Share on Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" class="media-link" title="Share on Twitter">
-                    <i class="fab fa-twitter-square"></i>
-                </a>
-                <a href="#" class="media-link" title="Share on Google">
-                    <i class="fab fa-google-plus-square"></i>
-                </a>
-                <a href="#" class="media-link" title="Share on Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <p class="sign">© Copyright by
-                <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
         </div>
-        <script src="template.js"></script>
-    </body>
+        <div class="social-media">
+            <a href="#" class="media-link" title="Share on Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Twitter">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Google">
+                <i class="fab fa-google-plus-square"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="sign">© Copyright by
+            <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
+    </div>
+    <script src="template.js"></script>
+</body>
+
 </html>

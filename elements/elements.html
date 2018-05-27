@@ -129,8 +129,8 @@
                     <button type="button" class="askQuestion-btn">Ask question</button>
             </div>
             
-            <div id="element-holder">
-                <div class="question-card"> <!-- QUESTION CARD -->
+            <div id="element-holder"><!-- QUESTION CARD -->
+                <div class="question-card">
                     <div class="counter-holder">  <!-- LEFT SİDE -->
                         <div class="counter counter-gold">
                             0 <br> Vote(s)
@@ -170,7 +170,7 @@
                 </div>
             </div>
 
-            <div id="element-holder">
+            <div id="element-holder"><!-- QUESTION LIST -->
                 <div class="questions-list">
                     <div class="question-element">
                         <div class="question-element-leftSide">
@@ -203,7 +203,14 @@
                     </div>
                 </div>
             </div>
+
+            <div id="element-holder">
+                <form action="" class="comment-col" id="add-comment-form">
+                    <input type="text" name="questionComment" id="questionComment" class="commentInput" placeholder="Add your comment">
+                    <span><i class="fab fa-telegram-plane" onclick="document.getElementById('add-comment-form').submit();"></i></span>
+                </form>
             </div>
+        </div>
         <!-- Sticky footer -->
         <div class="footer">
             <div class="upperPart">
