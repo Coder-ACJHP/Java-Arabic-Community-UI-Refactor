@@ -204,12 +204,94 @@
                 </div>
             </div>
 
-            <div id="element-holder">
+            <div id="element-holder"><!-- COMMENT INPUT -->
                 <form action="" class="comment-col" id="add-comment-form">
                     <input type="text" name="questionComment" id="questionComment" class="commentInput" placeholder="Add your comment">
-                    <span><i class="fab fa-telegram-plane" onclick="document.getElementById('add-comment-form').submit();"></i></span>
+                    <i class="fab fa-telegram-plane" title="Post your comment" onclick="document.getElementById('add-comment-form').submit();"></i>
                 </form>
             </div>
+
+            <div id="element-holder"><!-- QUESTION -->
+                <div class="question-container">
+                    <div class="question-side question-left">
+                        <div class="vote-container">
+                            <i class="fas fa-caret-up" title="This question is useful"></i>
+                            <p class="voteCount">120</p>
+                            <i class="fas fa-caret-down" title="This question is useless"></i>
+                        </div>
+                        <i class="fas fa-star" title="Add to favorite"></i>
+                        <div class="links-holder">
+                            <a href="#" class="question-editLink" title="Edit question">
+                                <i class="fas fa-pen-square"></i>
+                            </a>
+                            <a href="#" class="question-deleteLink" title="Delete question">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </div>
+                        <div class="shareButtonHolder">
+                            <a href="#" class="facebook" title="Share on Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="google" title="Share on Google">
+                                <i class="fab fa-google-plus-square"></i>
+                            </a>
+                            <a href="#" class="linkedIn" title="Share on Linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question-side question-right">
+                        <label class="questionPage-question-header">
+                            What is the HEX color that LinkedIn uses for blue?
+                        </label>
+                        <p class="questionPage-question-detail">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet ligula in justo faucibus consectetur. In malesuada
+                            ut dolor a eleifend. Quisque tempor purus ac ex dignissim pellentesque. Donec eleifend vulputate metus, id suscipit diam
+                            vestibulum vitae. Mauris varius, orci ac scelerisque pharetra, nunc ex luctus quam, sit amet scelerisque orci dui id
+                            nisl. Vestibulum interdum semper orci, ultricies tempus augue varius eu. Quisque feugiat lectus ex, ac condimentum dolor
+                            vulputate id. Phasellus auctor maximus odio, ut luctus ante mollis sed. Sed interdum enim eget tortor lacinia rhoncus.
+                            Etiam elementum nibh et ipsum ornare, vel porta mi pretium. Vivamus condimentum pharetra leo, ut convallis ante egestas
+                            id. Nam eu tincidunt purus, quis auctor felis.
+                            
+                            Suspendisse et nibh nulla. Quisque eget justo venenatis, tincidunt mi
+                            sed, dictum nibh. Curabitur a pharetra dui. Praesent dapibus lacus vel ipsum volutpat, eleifend venenatis urna aliquam.
+                            Pellentesque at nisl lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Proin tortor est, tempus eu nisi et, mattis interdum turpis. Etiam massa leo, commodo non cursus nec, egestas in dui.
+                            Nulla lectus ex, accumsan blandit leo in, pellentesque commodo nisi.
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet ligula in justo faucibus consectetur. In malesuada
+                            ut dolor a eleifend. Quisque tempor purus ac ex dignissim pellentesque. Donec eleifend vulputate metus, id suscipit diam
+                            vestibulum vitae. Mauris varius, orci ac scelerisque pharetra, nunc ex luctus quam, sit amet scelerisque orci dui id nisl.
+                            Vestibulum interdum semper orci, ultricies tempus augue varius eu. Quisque feugiat lectus ex, ac condimentum dolor vulputate
+                            id. Phasellus auctor maximus odio, ut luctus ante mollis sed. Sed interdum enim eget tortor lacinia rhoncus. Etiam elementum
+                            nibh et ipsum ornare, vel porta mi pretium. Vivamus condimentum pharetra leo, ut convallis ante egestas id. Nam eu tincidunt
+                            purus, quis auctor felis.
+                        </p>
+                        <div class="question-card-inner-down-side">
+                                <div class="question-card-tags-holder">
+                                        <a class="tags" target="_blank">Java</a>
+                                        <a class="tags" target="_blank">Go</a>
+                                        <a class="tags" target="_blank">Apache</a>
+                                        <a class="tags" target="_blank">Graphic design</a>
+                                </div>
+                                <div class="user-card">
+                                    <img src="../resources/user.jpg" alt="No prof image" class="user-profile-img">
+                                    <div class="user-card-detail">
+                                        <div class="user-title">
+                                            <a href="/Users?answerUserId=24">Coder ACJHP</a>
+                                        </div>
+                                        <div class="user-detail">asked : 2018-04-19</div>
+                                        <div id="badge-vote">♕
+                                            <font style="color:black;">0</font>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <!-- Sticky footer -->
         <div class="footer">
