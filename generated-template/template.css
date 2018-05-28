@@ -514,7 +514,10 @@ body {
     font-size: 11px;
     margin: 0;
 }
-
+#user-star {
+    font-size: 12px;
+    margin: 3px 3px 0 0;
+}
 .nav-right-user-link {
     display: inherit;
     justify-content: space-between;
@@ -722,6 +725,7 @@ body {
     width: 60%;
     margin: 0 auto;
     height: auto;
+    padding: 20px 0 20px 0;
     background-color: white;
     border-top: 0.1px solid #007196;
 
@@ -812,7 +816,7 @@ body {
     justify-content: space-between;
 }
 
-.media-link {
+.media-link > #media-button {
     color: grey;
     text-decoration: none;
     font-size: 30px;
@@ -823,7 +827,7 @@ body {
     font-size: 13px;
     text-align: center;
     color: #808080;
-    margin-bottom: 10px;
+    margin: 30px auto 5px auto;
 }
 
 .sign > a {
@@ -930,7 +934,12 @@ select:-webkit-autofill {
     flex-direction: row;
     justify-content: space-between;
 }
-.col > i, i.fas.fa-user {
+.col > #user-icon,
+#email-icon, #key-icon,
+#calendar-icon, #world-icon,
+#code-icon, #picture-icon, 
+#asterisk-icon, #magnifier-icon,
+#question-icon, #tags-icon {
     position: relative;
     top: 30px;
     left: 10px;
@@ -972,7 +981,7 @@ select:-webkit-autofill {
     
     width: 235px;
     height: 42px;
-    margin-right: auto;
+    margin-right: 87px;
     
     color: lightgray;
     font-size: 16px;
@@ -989,7 +998,8 @@ select:-webkit-autofill {
     -webkit-transition: .3s;
     
 }
-.postSuggestion-button {width: 300px;}
+.postSuggestion-button {margin-right: 81px;}
+#go-to-suggestion-form {margin-left: auto;}
 .postQuestion-button:hover,
 .postSuggestion-button:hover  {
     background-color: #007096;
@@ -1045,7 +1055,7 @@ select:-webkit-autofill {
 .suggestion-form-input{width: 90%;}
 
 .selectInput {
-    width: 98%;
+    width: 90%;
     height: 42px;
 
     /** Hide selection default button */
@@ -1090,7 +1100,7 @@ select.selectInput:focus {
     
     width: 235px;
     height: 42px;
-    margin-right: auto;
+    margin-right: 76px;
     
     color: lightgray;
     font-size: 16px;
@@ -1174,35 +1184,6 @@ select.selectInput:focus {
     color: #6e6e6e;
     line-height: 1.6em;
 }
-.postSuggestion-button {
-    
-    margin-left: auto;
-
-    width: 235px;
-    height: 42px;
-    margin-right: auto;
-    
-    color: #007196;
-    font-size: 16px;
-    
-    background-color: transparent;
-    border: 1px solid #007196;
-    border-radius: 3px;
-    outline: 0;
-    cursor: pointer;
-
-    transition: .3s;
-    -ms-transition: .3s;
-    -moz-transition: .3s;
-    -webkit-transition: .3s;
-    
-}
-
-.postSuggestion-button:hover {
-    background-color: #007096;
-    border: 1px solid transparent;
-    color: white;
-}
 
 .info-cards-container {
     width: 90%;
@@ -1275,7 +1256,7 @@ select.selectInput:focus {
 }
 #login-form {
     padding: 40px 25px 20px 25px;
-    margin: 2% auto 5% auto;
+    margin: 2% auto 1% auto;
     border: 0.5px solid lightgray;
     border-radius: 2px;
 }
@@ -1426,7 +1407,6 @@ select.selectInput:focus {
     font-size: inherit;
     text-decoration: none;
     font-size: 13px;
-    margin-left: auto;
     margin-right: 45px;
 
 }
@@ -1441,7 +1421,7 @@ select.selectInput:focus {
     width: 300px;
     height: 42px;
     align-self: flex-end;
-    margin-right: 45px;
+    margin-right: 65px;
     
     color: lightgray;
     font-size: 16px;
@@ -1468,13 +1448,38 @@ select.selectInput:focus {
 
 
 /** USER LIST START HERE */
-.inner-button {
-    position: absolute;
-    left: auto;
-    padding: 10px;
+#find-user-form > #founder {
+    position: relative;
+    top: 14px;
+    right: 75px;
+    padding-left: 15px;
+    color: #0c2160;
+    border-left: 1px solid lightgray;
+    cursor: pointer;
+}
+label#find-user-label {
+    color: rgb(189, 189, 189);
+    font-size: 16px;
+    font-family: inherit;
+    align-self: center;
+    margin-bottom: 0;
+}
+.find-user-input {
+    width: 71%;
+    height: 30px;
+    padding: 5px 50px 5px 5px;
     border: 1px solid lightgray;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-radius: 3px;
+    outline: 0;
+    font-size: 16px;
+    transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+}
+.find-user-input:focus {
+    border-color: #47cbfc;
+    box-shadow: 0px 0px 5px 1px #79dbffb3;
 }
 .userList-container {
     width: 85%;
@@ -1514,9 +1519,6 @@ select.selectInput:focus {
     flex-flow: column;
     align-content: flex-start;
     justify-content: space-between;
-}
-.header {
-    width: 100%;
 }
 .name {
     display: inline-block;
