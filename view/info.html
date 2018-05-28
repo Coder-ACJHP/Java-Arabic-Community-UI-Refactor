@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
     <!-- Custom css sheet -->
-    <link href="info.css" rel="stylesheet">
+    <link href="../resources/css/template.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="top-nav-container">
         <!-- Logged out navbar -->
-        <div class="top-nav">
+        <div class="top-nav  hide">
             <div class="nav-leftSide">
                 <a href="#" class="logo-link" title="Home">
-                    <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <img src="../resources/images/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
                     <p>Java Arabic Community</p>
                 </a>
             </div>
@@ -51,7 +51,7 @@
                 knowledge, and build their careers. More than N professional and aspiring programmers visit Java Arabic Community
                 each month to help solve coding problems, develop new skills.
             </p>
-            <button type="submit" class="postSuggestion-button" onclick="document.querySelector('.fas.fa-spinner').style.display='inline-block';">
+            <button type="submit" class="postSuggestion-button" id="go-to-suggestion-form">
                 <i class="fas fa-spinner"></i> &nbsp;Send feedback
             </button>
         </div>
@@ -60,7 +60,7 @@
             <div class="info-card">
                 <h2 class="info-card-top">java ee</h2>
                 <div class="info-card-bottom">
-                    <img src="../resources/java-ee.png" alt="No icon-image" class="mini-img">
+                    <img src="../resources/images/java-ee.png" alt="No icon-image" class="mini-img">
                     <div class="info-card-detail">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
                         Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
@@ -74,7 +74,7 @@
             <div class="info-card">
                 <h2 class="info-card-top">spring</h2>
                 <div class="info-card-bottom">
-                    <img src="../resources/spring.svg" alt="No icon-image" class="mini-img">
+                    <img src="../resources/images/spring.svg" alt="No icon-image" class="mini-img">
                     <div class="info-card-detail">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
                         Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
@@ -88,7 +88,7 @@
             <div class="info-card">
                 <h2 class="info-card-top">hibernate</h2>
                 <div class="info-card-bottom">
-                    <img src="../resources/hibernate.png" alt="No icon-image" class="mini-img">
+                    <img src="../resources/images/hibernate.png" alt="No icon-image" class="mini-img">
                     <div class="info-card-detail">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
                         Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
@@ -102,7 +102,7 @@
             <div class="info-card">
                 <h2 class="info-card-top">maven</h2>
                 <div class="info-card-bottom">
-                    <img src="../resources/maven.png" alt="No icon-image" class="mini-img">
+                    <img src="../resources/images/maven.png" alt="No icon-image" class="mini-img">
                     <div class="info-card-detail">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
                         Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
@@ -116,7 +116,7 @@
             <div class="info-card">
                 <h2 class="info-card-top">heroku</h2>
                 <div class="info-card-bottom">
-                    <img src="../resources/heroku.jpg" alt="No icon-image" class="mini-img">
+                    <img src="../resources/images/heroku.jpg" alt="No icon-image" class="mini-img">
                     <div class="info-card-detail">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
                         Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
@@ -130,7 +130,7 @@
             <div class="info-card">
                 <h2 class="info-card-top">Javascript</h2>
                 <div class="info-card-bottom">
-                    <img src="../resources/javascript.jpg" alt="No icon-image" class="mini-img">
+                    <img src="../resources/images/javascript.jpg" alt="No icon-image" class="mini-img">
                     <div class="info-card-detail">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
                         Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
@@ -144,7 +144,7 @@
             <div class="info-card">
                 <h2 class="info-card-top">tinymce</h2>
                 <div class="info-card-bottom">
-                    <img src="../resources/tinymce.jpg" alt="No icon-image" class="mini-img">
+                    <img src="../resources/images/tinymce.jpg" alt="No icon-image" class="mini-img">
                     <div class="info-card-detail">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare ipsum efficitur, viverra metus ut, interdum tellus.
                         Nullam vel nulla tellus. Praesent eros neque, egestas tincidunt sapien a, malesuada cursus sem. Mauris
@@ -162,7 +162,7 @@
     <div class="footer">
         <div class="upperPart">
             <h4 class="header">
-                <img src="../resources/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
+                <img src="../resources/images/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
                 <br>Q &amp; A website</h4>
             <div class="link-container">
                 <a href="#" class="links" title="Contact us">CONTACT</a>
@@ -172,22 +172,22 @@
         </div>
         <div class="social-media">
             <a href="#" class="media-link" title="Share on Facebook">
-                <i class="fab fa-facebook"></i>
+                <i class="fab fa-facebook" id="media-button"></i>
             </a>
             <a href="#" class="media-link" title="Share on Twitter">
-                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-twitter-square" id="media-button"></i>
             </a>
             <a href="#" class="media-link" title="Share on Google">
-                <i class="fab fa-google-plus-square"></i>
+                <i class="fab fa-google-plus-square" id="media-button"></i>
             </a>
             <a href="#" class="media-link" title="Share on Instagram">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram" id="media-button"></i>
             </a>
         </div>
         <p class="sign">© Copyright by
             <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
     </div>
-    <script src="template.js"></script>
+    <script src="../resources/js/template.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External font icons link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <!-- Custom css sheet -->
+    <link href="../resources/css/template.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-nav-container">
+        <!-- Logged out navbar -->
+        <div class="top-nav">
+            <div class="nav-leftSide">
+                <a href="#" class="logo-link" title="Home">
+                    <img src="../resources/images/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <p>Java Arabic Community</p>
+                </a>
+            </div>
+            <div class="nav-middleSide">
+                <label for="nav-middleSide" class="search-label">Search : </label>
+                <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                <i class="fas fa-search" title="Search"></i>
+            </div>
+            <div class="nav-rightSide">
+                <a href="#" class="nav-right-link seperator" title="Log in">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign in
+                </a>
+                <a href="#" class="nav-right-link" title="Register">
+                    <i class="fas fa-user-plus"></i>
+                    Sign up
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Body fixed container -->
+    <div class="static-container">
+
+        <!-- LOGIN HEADER TEXT -->
+        <div class="login-header">
+            <h3 class="login-header-text">Learn, Share, Build</h3>
+            <p class="login-header-detail">
+                Founded in 2016, Java Arabic Community is the stable, most trusted online community for developers to learn, share their
+                knowledge, and build their careers.
+            </p>
+        </div>
+
+        <form action="" method="post" id="login-form">
+            <div class="col">
+                <button type="button" class="form-button googleBtn">
+                    <i class="fab fa-google-plus-square"></i> &nbsp;Google
+                </button>
+            </div>
+            <div class="col">
+                <button type="button" class="form-button facebookBtn">
+                    <i class="fab fa-facebook"></i> &nbsp;Facebook
+                </button>
+            </div>
+            <div class="col">
+                <p class="lined-paraghraph">OR</p>
+            </div>
+            <div class="col">
+                <label for="email">Email : </label>
+                <i class="fas fa-at" id="email-icon"></i>
+                <input type="email" name="email" id="email" class="customInput" placeholder="you@example.net">
+            </div>
+            <div class="col">
+                <label for="password">Password : </label>
+                <i class="fas fa-key" id="key-icon"></i>
+                <input type="password" name="password" id="password" class="customInput" placeholder="**********">
+            </div>
+            <div class="col">
+                <button type="submit" class="form-button loginBtn">
+                    <i class="fas fa-spinner"></i> &nbsp;Log in
+                </button>
+            </div>
+            <div class="col">
+                <a href="#" class="formLink">Forgot
+                    <span>password</span> ?</a>
+                <a href="#" class="formLink">Don't have an
+                    <span>account</span> ?</a>
+            </div>
+        </form>
+    </div>
+    <!-- Sticky footer -->
+    <div class="footer">
+        <div class="upperPart">
+            <h4 class="header">
+                <img src="../resources/images/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
+                <br>Q &amp; A website</h4>
+            <div class="link-container">
+                <a href="#" class="links" title="Contact us">CONTACT</a>
+                <a href="#" class="links" title="About us">ABOUT US</a>
+                <a href="#" class="links" title="Terms &amp; Conditions">TERMS AND CONDITIONS</a>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="media-link" title="Share on Facebook">
+                <i class="fab fa-facebook" id="media-button"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Twitter">
+                <i class="fab fa-twitter-square" id="media-button"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Google">
+                <i class="fab fa-google-plus-square" id="media-button"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Instagram">
+                <i class="fab fa-instagram" id="media-button"></i>
+            </a>
+        </div>
+        <p class="sign">© Copyright by
+            <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
+    </div>
+    <script src="../resources/js/template.js"></script>
+</body>
+
+</html>

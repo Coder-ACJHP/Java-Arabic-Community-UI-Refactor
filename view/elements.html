@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External font icons link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <!-- Custom css sheet -->
+    <link href="../resources/css/template.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-nav-container">
+        <!-- Logged out navbar -->
+        <div class="top-nav  hide">
+            <div class="nav-leftSide">
+                <a href="#" class="logo-link" title="Home">
+                    <img src="../resources/images/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <p>Java Arabic Community</p>
+                </a>
+            </div>
+            <div class="nav-middleSide">
+                <label for="nav-middleSide" class="search-label">Search : </label>
+                <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                <i class="fas fa-search" title="Search"></i>
+            </div>
+            <div class="nav-rightSide">
+                <a href="#" class="nav-right-link seperator" title="Log in">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign in
+                </a>
+                <a href="#" class="nav-right-link" title="Register">
+                    <i class="fas fa-user-plus"></i>
+                    Sign up
+                </a>
+            </div>
+        </div>
+        <!-- Logged in navbar -->
+        <div class="top-nav">
+            <div class="nav-leftSide">
+                <a href="#" class="logo-link" title="Home">
+                    <img src="../resources/images/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <p>Java Arabic Community</p>
+                </a>
+            </div>
+            <div class="nav-middleSide">
+                <label for="nav-middleSide" class="search-label">Search : </label>
+                <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                <i class="fas fa-search" title="Search"></i>
+            </div>
+            <div class="nav-rightSide">
+                <div class="nav-user">
+                    <a href="#" class="nav-right-user-link" title="Show profile">
+                        <img src="../resources/images/user.jpg" alt="profile img" class="nav-user-mini-img">
+                        <p class="nav-user-detail">
+                            Coder ACJHP 12.12.2018
+                            <i class="fas fa-star" id="user-star"></i>25
+                        </p>
+                    </a>
+                    <i class="fas fa-envelope" title="Message box" id="trigger"></i>
+                </div>
+                <a href="#" class="nav-right-link" title="Register">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Sign out</span>
+                </a>
+            </div>
+        </div>
+        <div id="popover-container">
+            <div class="popover-arrow"></div>
+            <div class="popover" role="tooltip" id="popover">
+                <h3 class="popover-title">MESSAGE BOX</h3>
+                <div class="popover-content-container">
+                    <div class="user-message">
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur !
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="user-message">
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur !
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="user-message">
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur !
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Body fixed container -->
+    <div class="static-container">
+
+        <!-- Big Banner -->
+        <div class="banner-full-width">
+            <img src="../resources/images/abstract-banner-bg.png" alt="no banner" class="banner-bg">
+            <p class="banner-text">
+                J.A.C is a project open source and free, community of programmers helping each other.Join to us it only takes a minute:
+            </p>
+            <button class="join-us-btn">Join to us</button>
+        </div>
+
+        <div id="element-holder">
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs">
+                <li id="active">
+                    <a href="#">All Questions</a>
+                </li>
+                <li>
+                    <a href="#">Top Questions</a>
+                </li>
+                <li>
+                    <a href="#">Users</a>
+                </li>
+                <li>
+                    <a href="#">Info</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="element-holder">
+            <button type="button" class="askQuestion-btn">Ask question</button>
+        </div>
+
+        <div id="element-holder">
+            <!-- QUESTION CARD -->
+            <div class="question-card">
+                <div class="counter-holder">
+                    <!-- LEFT SİDE -->
+                    <div class="counter counter-gold">
+                        0
+                        <br> Vote(s)
+                    </div>
+                    <div class="counter counter-blue">
+                        0
+                        <br> Answer(s)
+                    </div>
+                </div>
+                <div class="question-card-detail">
+                    <!-- RIGHT SİDE -->
+                    <a href="#" class="question-header">
+                        How to resize a shape with mouse in Java?
+                    </a>
+                    <p class="question-detail">
+                        I can draw, select and move shapes like rectangle and ellipses.I also want to let the user resize his shape
+                    </p>
+                    <div class="question-card-inner-down-side">
+                        <div class="question-card-tags-holder">
+                            <a class="tags" target="_blank">Java</a>
+                            <a class="tags" target="_blank">Java</a>
+                            <a class="tags" target="_blank">Java</a>
+                            <a class="tags" target="_blank">Java</a>
+                        </div>
+                        <div class="user-card">
+                            <img src="../resources/images/user.jpg" alt="No prof image" class="user-profile-img">
+                            <div class="user-card-detail">
+                                <div class="user-title">
+                                    <a href="/Users?answerUserId=24">Coder ACJHP</a>
+                                </div>
+                                <div class="user-detail">asked : 2018-04-19</div>
+                                <div id="badge-vote">♕
+                                    <font style="color:black;">0</font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="element-holder">
+            <!-- QUESTION LIST -->
+            <div class="questions-list">
+                <div class="question-element">
+                    <div class="question-element-leftSide">
+                        <div class="counter counter-gold">
+                            0
+                            <br> Vote(s)
+                        </div>
+                        <div class="counter counter-blue">
+                            0
+                            <br> Answer(s)
+                        </div>
+                    </div>
+                    <div class="question-element-rightSide">
+                        <a href="#" class="question-header">
+                            How to resize a shape with mouse in Java?
+                        </a>
+                        <div class="question-list-tags-holder">
+                            <a class="cv-tags" target="_blank">Java</a>
+                            <a class="cv-tags" target="_blank">Java</a>
+                            <a class="cv-tags" target="_blank">Java</a>
+                            <a class="cv-tags" target="_blank">Java</a>
+                        </div>
+                        <div class="user-detail-asLine">
+                            <div class="user-title">
+                                <a href="/Users?answerUserId=24">Coder ACJHP</a>
+                            </div>
+                            <div id="badge-vote">♕
+                                <font style="color:black;">0</font>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="element-holder">
+            <!-- COMMENT INPUT -->
+            <form action="" class="comment-col" id="add-comment-form">
+                <input type="text" name="questionComment" id="questionComment" class="commentInput" placeholder="Add your comment">
+                <i class="fab fa-telegram-plane" title="Post your comment" id="submitter"></i>
+            </form>
+        </div>
+
+        <div id="element-holder">
+            <!-- QUESTION -->
+            <div class="question-container">
+                <div class="question-side question-left">
+                    <div class="vote-container">
+                        <i class="fas fa-caret-up" title="This question is useful"></i>
+                        <p class="voteCount">120</p>
+                        <i class="fas fa-caret-down" title="This question is useless"></i>
+                    </div>
+                    <i class="fas fa-star" title="Add to favorite"></i>
+                    <div class="links-holder">
+                        <a href="#" class="question-editLink" title="Edit question">
+                            <i class="fas fa-pen-square"></i>
+                        </a>
+                        <a href="#" class="question-deleteLink" title="Delete question">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                    <div class="shareButtonHolder">
+                        <a href="#" class="facebook" title="Share on Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="google" title="Share on Google">
+                            <i class="fab fa-google-plus-square"></i>
+                        </a>
+                        <a href="#" class="linkedIn" title="Share on Linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="question-side question-right">
+                    <label class="questionPage-question-header">
+                        What is the HEX color that LinkedIn uses for blue?
+                    </label>
+                    <p class="questionPage-question-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet ligula in justo faucibus consectetur. In malesuada
+                        ut dolor a eleifend. Quisque tempor purus ac ex dignissim pellentesque. Donec eleifend vulputate
+                        metus, id suscipit diam vestibulum vitae. Mauris varius, orci ac scelerisque pharetra, nunc ex luctus
+                        quam, sit amet scelerisque orci dui id nisl. Vestibulum interdum semper orci, ultricies tempus augue
+                        varius eu. Quisque feugiat lectus ex, ac condimentum dolor vulputate id. Phasellus auctor maximus
+                        odio, ut luctus ante mollis sed. Sed interdum enim eget tortor lacinia rhoncus. Etiam elementum nibh
+                        et ipsum ornare, vel porta mi pretium. Vivamus condimentum pharetra leo, ut convallis ante egestas
+                        id. Nam eu tincidunt purus, quis auctor felis. Suspendisse et nibh nulla. Quisque eget justo venenatis,
+                        tincidunt mi sed, dictum nibh. Curabitur a pharetra dui. Praesent dapibus lacus vel ipsum volutpat,
+                        eleifend venenatis urna aliquam. Pellentesque at nisl lorem. Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis egestas. Proin tortor est, tempus eu nisi et, mattis
+                        interdum turpis. Etiam massa leo, commodo non cursus nec, egestas in dui. Nulla lectus ex, accumsan
+                        blandit leo in, pellentesque commodo nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque sit amet ligula in justo faucibus consectetur. In malesuada ut dolor a eleifend. Quisque
+                        tempor purus ac ex dignissim pellentesque. Donec eleifend vulputate metus, id suscipit diam vestibulum
+                        vitae. Mauris varius, orci ac scelerisque pharetra, nunc ex luctus quam, sit amet scelerisque orci
+                        dui id nisl. Vestibulum interdum semper orci, ultricies tempus augue varius eu. Quisque feugiat lectus
+                        ex, ac condimentum dolor vulputate id. Phasellus auctor maximus odio, ut luctus ante mollis sed.
+                        Sed interdum enim eget tortor lacinia rhoncus. Etiam elementum nibh et ipsum ornare, vel porta mi
+                        pretium. Vivamus condimentum pharetra leo, ut convallis ante egestas id. Nam eu tincidunt purus,
+                        quis auctor felis.
+                    </p>
+                    <div class="question-card-inner-down-side">
+                        <div class="question-card-tags-holder">
+                            <a class="tags" target="_blank">Java</a>
+                            <a class="tags" target="_blank">Go</a>
+                            <a class="tags" target="_blank">Apache</a>
+                            <a class="tags" target="_blank">Graphic design</a>
+                        </div>
+                        <div class="user-card">
+                            <img src="../resources/images/user.jpg" alt="No prof image" class="user-profile-img">
+                            <div class="user-card-detail">
+                                <div class="user-title">
+                                    <a href="/Users?answerUserId=24">Coder ACJHP</a>
+                                </div>
+                                <div class="user-detail">asked : 2018-04-19</div>
+                                <div id="badge-vote">♕
+                                    <font style="color:black;">0</font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="element-holder">
+            <!-- ANSWER -->
+            <div class="answer-container">
+                <div class="answer-side answer-left">
+                    <div class="vote-container">
+                        <i class="fas fa-caret-up" title="This answer is useful"></i>
+                        <p class="voteCount">120</p>
+                        <i class="fas fa-caret-down" title="This answer is useless"></i>
+                    </div>
+                    <i id="accepted" class="fas fa-check" title="Reject this answer"></i>
+                    <i id="unAccepted" class="fas fa-check" title="Accep this answer"></i>
+                    <div class="links-holder">
+                        <a href="#" class="answer-editLink" title="Edit answer">
+                            <i class="fas fa-pen-square"></i>
+                        </a>
+                        <a href="#" class="answer-deleteLink" title="Delete answer">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </div>
+                    <div class="shareButtonHolder">
+                        <a href="#" class="facebook" title="Share on Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="google" title="Share on Google">
+                            <i class="fab fa-google-plus-square"></i>
+                        </a>
+                        <a href="#" class="linkedIn" title="Share on Linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="answer-side answer-right">
+                    <label class="questionPage-answer-header">Answer :
+                        <span class="answer-count">1</span>
+                    </label>
+                    <p class="questionPage-answer-detail">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet ligula in justo faucibus consectetur. In malesuada
+                        ut dolor a eleifend. Quisque tempor purus ac ex dignissim pellentesque. Donec eleifend vulputate
+                        metus, id suscipit diam vestibulum vitae. Mauris varius, orci ac scelerisque pharetra, nunc ex luctus
+                        quam, sit amet scelerisque orci dui id nisl. Vestibulum interdum semper orci, ultricies tempus augue
+                        varius eu. Quisque feugiat lectus ex, ac condimentum dolor vulputate id. Phasellus auctor maximus
+                        odio, ut luctus ante mollis sed. Sed interdum enim eget tortor lacinia rhoncus. Etiam elementum nibh
+                        et ipsum ornare, vel porta mi pretium. Vivamus condimentum pharetra leo, ut convallis ante egestas
+                        id. Nam eu tincidunt purus, quis auctor felis. Suspendisse et nibh nulla. Quisque eget justo venenatis,
+                        tincidunt mi sed, dictum nibh. Curabitur a pharetra dui. Praesent dapibus lacus vel ipsum volutpat,
+                        eleifend venenatis urna aliquam. Pellentesque at nisl lorem. Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis egestas. Proin tortor est, tempus eu nisi et, mattis
+                        interdum turpis. Etiam massa leo, commodo non cursus nec, egestas in dui. Nulla lectus ex, accumsan
+                        blandit leo in, pellentesque commodo nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque sit amet ligula in justo faucibus consectetur. In malesuada ut dolor a eleifend. Quisque
+                        tempor purus ac ex dignissim pellentesque. Donec eleifend vulputate metus, id suscipit diam vestibulum
+                        vitae. Mauris varius, orci ac scelerisque pharetra, nunc ex luctus quam, sit amet scelerisque orci
+                        dui id nisl. Vestibulum interdum semper orci, ultricies tempus augue varius eu. Quisque feugiat lectus
+                        ex, ac condimentum dolor vulputate id. Phasellus auctor maximus odio, ut luctus ante mollis sed.
+                        Sed interdum enim eget tortor lacinia rhoncus. Etiam elementum nibh et ipsum ornare, vel porta mi
+                        pretium. Vivamus condimentum pharetra leo, ut convallis ante egestas id. Nam eu tincidunt purus,
+                        quis auctor felis.
+                    </p>
+                    <div class="question-card-inner-down-side">
+                        <div class="user-card">
+                            <img src="../resources/images/user.jpg" alt="No prof image" class="user-profile-img">
+                            <div class="user-card-detail">
+                                <div class="user-title">
+                                    <a href="/Users?answerUserId=24">Coder ACJHP</a>
+                                </div>
+                                <div class="user-detail">asked : 2018-04-19</div>
+                                <div id="badge-vote">♕
+                                    <font style="color:black;">0</font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Sticky footer -->
+    <div class="footer">
+        <div class="upperPart">
+            <h4 class="header">
+                <img src="../resources/images/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
+                <br>Q &amp; A website</h4>
+            <div class="link-container">
+                <a href="#" class="links" title="Contact us">CONTACT</a>
+                <a href="#" class="links" title="About us">ABOUT US</a>
+                <a href="#" class="links" title="Terms &amp; Conditions">TERMS AND CONDITIONS</a>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#" class="media-link" title="Share on Facebook">
+                <i class="fab fa-facebook" id="media-button"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Twitter">
+                <i class="fab fa-twitter-square" id="media-button"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Google">
+                <i class="fab fa-google-plus-square" id="media-button"></i>
+            </a>
+            <a href="#" class="media-link" title="Share on Instagram">
+                <i class="fab fa-instagram" id="media-button"></i>
+            </a>
+        </div>
+        <p class="sign">© Copyright by
+            <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
+    </div>
+    <script src="../resources/js/template.js"></script>
+</body>
+
+</html>

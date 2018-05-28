@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
     <!-- Custom css sheet -->
-    <link href="sendSuggestion.css" rel="stylesheet">
+    <link href="../resources/css/template.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="top-nav-container">
         <!-- Logged out navbar -->
-        <div class="top-nav">
+        <div class="top-nav  hide">
             <div class="nav-leftSide">
                 <a href="#" class="logo-link" title="Home">
-                    <img src="../resources/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <img src="../resources/images/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
                     <p>Java Arabic Community</p>
                 </a>
             </div>
@@ -38,23 +38,85 @@
                 </a>
             </div>
         </div>
+        <!-- Logged in navbar -->
+        <div class="top-nav">
+            <div class="nav-leftSide">
+                <a href="#" class="logo-link" title="Home">
+                    <img src="../resources/images/Jac-nav-logo.png" alt="no logo" class="top-nav-icon">
+                    <p>Java Arabic Community</p>
+                </a>
+            </div>
+            <div class="nav-middleSide">
+                <label for="nav-middleSide" class="search-label">Search : </label>
+                <input type="text" name="queryText" id="search-input" class="nav-search-input">
+                <i class="fas fa-search" title="Search"></i>
+            </div>
+            <div class="nav-rightSide">
+                <div class="nav-user">
+                    <a href="#" class="nav-right-user-link" title="Show profile">
+                        <img src="../resources/images/user.jpg" alt="profile img" class="nav-user-mini-img">
+                        <p class="nav-user-detail">
+                            Coder ACJHP 12.12.2018
+                            <i class="fas fa-star" id="user-star"></i>25
+                        </p>
+                    </a>
+                    <i class="fas fa-envelope" title="Message box" id="trigger"></i>
+                </div>
+                <a href="#" class="nav-right-link" title="Register">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Sign out</span>
+                </a>
+            </div>
+        </div>
+        <div id="popover-container">
+            <div class="popover-arrow"></div>
+            <div class="popover" role="tooltip" id="popover">
+                <h3 class="popover-title">MESSAGE BOX</h3>
+                <div class="popover-content-container">
+                    <div class="user-message">
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur !
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="user-message">
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur !
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="user-message">
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur !
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Body fixed container -->
     <div class="static-container">
         <form action="#" method="post" id="suggestion-form">
             <div class="col">
                 <label for="name">First and last name : </label>
-                <i class="fas fa-user"></i>
+                <i class="fas fa-user" id="user-icon"></i>
                 <input type="text" name="name" id="name" class="customInput" placeholder="Coder ACJHP">
             </div>
             <div class="col">
                 <label for="email">Email : </label>
-                <i class="fas fa-at"></i>
+                <i class="fas fa-at" id="email-icon"></i>
                 <input type="email" name="email" id="email" class="customInput" placeholder="you@example.net">
             </div>
             <div class="col">
                 <label for="country">Country : </label>
-                <i class="fas fa-globe"></i>
+                <i class="fas fa-globe" id="world-icon"></i>
                 <select id="country" name="country" class="customInput selectInput" required="required">
                     <option value="IQ">Iraq</option>
                     <option value="TR">Turkey</option>
@@ -63,7 +125,7 @@
             </div>
             <div class="col">
                 <label for="category">Category : </label>
-                <i class="fas fa-globe"></i>
+                <i class="fas fa-globe" id="world-icon"></i>
                 <select id="category" name="category" class="customInput selectInput" required="required">
                     <option value="IQ">Suggest something</option>
                     <option value="TR">Help about website</option>
@@ -73,22 +135,22 @@
             </div>
             <div class="col">
                 <label for="subject">Subject : </label>
-                <i class="fas fa-asterisk"></i>
+                <i class="fas fa-asterisk" id="asterisk-icon"></i>
                 <input type="text" name="subject" id="subject" class="customInput" placeholder="Anything">
             </div>
             <div class="col">
                 <label for="message">Message : </label>
-                <i class="fab fa-wpexplorer"></i>
+                <i class="fab fa-wpexplorer" id="magnifier-icon"></i>
                 <textarea id="mytextarea" name="message" class="customInput"></textarea>
             </div>
             <div class="col flux">
-                    <a href="#" class="suggestion-formLink">Are you unsure?
-                        <span>Go to questions page</span>
-                    </a>
-                    <button type="submit" class="postSuggestion-button" onclick="document.querySelector('.fas.fa-spinner').style.display='inline-block';">
-                            <i class="fas fa-spinner"></i> &nbsp;Post your suggestion
-                    </button>        
-                </div>
+                <a href="#" class="suggestion-formLink">Are you unsure?
+                    <span>Go to questions page</span>
+                </a>
+                <button type="submit" class="postSuggestion-button">
+                    <i class="fas fa-spinner"></i> &nbsp;Post your suggestion
+                </button>
+            </div>
         </form>
 
     </div>
@@ -96,7 +158,7 @@
     <div class="footer">
         <div class="upperPart">
             <h4 class="header">
-                <img src="../resources/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
+                <img src="../resources/images/Jac-nav-logo.png" class="footer-logo"> Java Arabic Community
                 <br>Q &amp; A website</h4>
             <div class="link-container">
                 <a href="#" class="links" title="Contact us">CONTACT</a>
@@ -106,21 +168,22 @@
         </div>
         <div class="social-media">
             <a href="#" class="media-link" title="Share on Facebook">
-                <i class="fab fa-facebook"></i>
+                <i class="fab fa-facebook" id="media-button"></i>
             </a>
             <a href="#" class="media-link" title="Share on Twitter">
-                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-twitter-square" id="media-button"></i>
             </a>
             <a href="#" class="media-link" title="Share on Google">
-                <i class="fab fa-google-plus-square"></i>
+                <i class="fab fa-google-plus-square" id="media-button"></i>
             </a>
             <a href="#" class="media-link" title="Share on Instagram">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram" id="media-button"></i>
             </a>
         </div>
         <p class="sign">© Copyright by
             <a href="https://github.com/Coder-ACJHP/">Coder ACJHP</a> - All Rights Reserved</p>
     </div>
+    <script src="../resources/js/template.js"></script>
 </body>
 
 </html>
