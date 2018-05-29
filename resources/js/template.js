@@ -21,6 +21,38 @@ if (trigger) {
     });
 }
 
+/** Toogle navigation bar with toggle button */
+var clickCount = 0;
+var navigationBar = document.querySelector('.nav-bar');
+var togglerBtn = document.querySelector('.toggler-btn');
+var collapsibleNavbar = document.querySelector('#collapsibleNavbar');
+
+function showCollapseNav() {
+    togglerBtn.setAttribute('id', 'toggler-btn-rotated');
+    collapsibleNavbar.style.display = "block";
+    navigationBar.setAttribute('id', 'nav-bar-border');
+    clickCount = 1;
+}
+
+function hideCollapseNav() {
+    togglerBtn.setAttribute('id', '');
+    collapsibleNavbar.style.display = "none";
+    navigationBar.setAttribute('id', '');
+    clickCount = 0;
+}
+
+if(togglerBtn) {
+    togglerBtn.addEventListener('click', () => {
+
+        if (clickCount == 0) {
+            showCollapseNav();
+        } else {
+            hideCollapseNav();
+        }
+
+    });
+}
+
 /** Close sticker, banner */
 function closeTheSticker(triggerEl, element) {
     if(triggerEl != null && element != null) {
@@ -71,6 +103,9 @@ function animateButtonIcon(buttonName) {
         if (el) {
             el.addEventListener('click', ()=> {
                 document.querySelector('.fas.fa-spinner').style.display = 'inline-block';
+                if (el.id === 'go-to-suggestion-form') {
+                    window.location.href = 'sendSuggestion.html';
+                }
             });
         }
     }
@@ -113,3 +148,16 @@ if (profilePicEl) {
     });
 }
 /** Sign up form */
+/** Login modal functions */
+let closeX = document.querySelector('.close');
+let closeBtn = document.querySelector('.modal-close-button');
+
+if (closeX && closeBtn) {
+    function closeModal(params) {
+        params.addEventListener('click', ()=> {
+            document.querySelector('.login-modal-container').style.display = "none";
+        });
+    }
+    closeModal(closeX);
+    closeModal(closeBtn);
+}

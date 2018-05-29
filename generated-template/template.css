@@ -1041,6 +1041,145 @@ select:-webkit-autofill {
 }
 /** ASK QUESTION END HERE */
 
+/** MODAL LOGIN */
+.login-modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 2%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.79);
+}
+
+.login-modal-frame {
+    position: relative;
+    background-color: #fefefe;
+    margin: 3% auto;
+    padding: 0;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.login-modal-header {
+    background-color: white;
+    padding: 15px 5px 15px 15px;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid lightgray;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.login-modal-logo {
+    width: 50px;
+    height: 50px;
+}
+.close {
+    color: lightgray;
+    text-shadow: 0 1px 0 #fff;
+    padding-right: 15px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+#modal-header-text {
+    font-size: 25px;
+    align-self: center;
+    color: black;
+    text-transform: capitalize;
+}
+.login-modal-body {
+    padding: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+#lbModal {
+    width: 95%;
+    margin: 10px 0 5px 0;
+}
+#modal-login-form {
+    width: 90%;
+}
+.modal-footer {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 55px;
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+.modal-close-button  {
+    width: 130px;
+    padding: 6px;
+    background-color: transparent;
+    color: #ac2925;
+    border: 1px solid #ac2925;
+    border-radius: 4px;
+    transition: all .5s;
+}
+.modal-close-button:hover {
+    background-color: #c9302c;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-footer-links {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 35px;
+}
+/** MODAL LOGIN END */
+
+
 /** SEND SUGGESTION PAGE START HERE */
 
 #suggestion-form {

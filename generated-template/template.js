@@ -113,3 +113,17 @@ if (profilePicEl) {
     });
 }
 /** Sign up form */
+
+/** Login modal functions */
+let closeX = document.querySelector('.close');
+let closeBtn = document.querySelector('.modal-close-button');
+
+if (closeX && closeBtn) {
+    function closeModal(params) {
+        params.addEventListener('click', ()=> {
+            document.querySelector('.login-modal-container').style.display = "none";
+        });
+    }
+    closeModal(closeX);
+    closeModal(closeBtn);
+}

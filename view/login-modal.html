@@ -113,6 +113,48 @@
     <!-- Body fixed container -->
     <div class="static-container">
 
+        <button class="login-modal-trigger" onclick="document.querySelector('.login-modal-container').style.display='block';">
+            Press to open modal
+        </button>
+
+        <div class="login-modal-container">
+            <div class="login-modal-frame">
+                <div class="login-modal-header">
+                    <img src="../resources/images/Jac-nav-logo.png" alt="no logo" class="login-modal-logo">
+                    <label id="modal-header-text">You already a member?</label>
+                    <span class="close" title="Close modal">×</span>
+                </div>
+                <div class="login-modal-body">
+                <form action="#" id="modal-login-form">
+                    <div class="col">
+                        <label for="email">Email : </label>
+                        <i class="fas fa-at" id="email-icon"></i>
+                        <input type="email" name="email" id="email" class="customInput" placeholder="you@example.net">
+                    </div>
+                    <div class="col">
+                        <label for="password">Password : </label>
+                        <i class="fas fa-key" id="key-icon"></i>
+                        <input type="password" name="password" id="password" class="customInput" placeholder="**********">
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="form-button loginBtn" id="lbModal">
+                            <i class="fas fa-spinner"></i> &nbsp;Log in
+                        </button>
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <button  type="button" class="modal-close-button">Close</button>
+                    <div class="modal-footer-links">
+                        <a href="#" class="formLink">Forgot
+                            <span>password</span> ?</a>
+                        <a href="#" class="formLink">Don't have an
+                            <span>account</span> ?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
     </div>
