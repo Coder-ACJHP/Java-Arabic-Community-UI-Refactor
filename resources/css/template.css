@@ -1042,6 +1042,28 @@ select:-webkit-autofill {
     margin-left: auto;
     text-decoration: none;
 }
+.alert-info {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    text-align: left;
+    border:none;
+    border: 1px solid #e6f2ff;
+    border-radius: 3px;
+    background-color: #d8eafc;
+    color: #0c2160;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.alert-info > span.dismiss {
+    align-self: center;
+    font-size: 25px;
+    color: #7d9dfe;
+    cursor: pointer;
+}
 /** ASK QUESTION END HERE */
 
 /** SEND SUGGESTION PAGE START HERE */
@@ -1410,7 +1432,7 @@ select.selectInput:focus {
     font-size: inherit;
     text-decoration: none;
     font-size: 13px;
-    margin-right: 45px;
+    margin-right: auto;
 
 }
 
@@ -1441,6 +1463,8 @@ select.selectInput:focus {
     -webkit-transition: .3s;
     
 }
+
+.signUp-margin-45 {margin-right: 45px;}
 
 .signUp-button:hover {
     background-color: #007096;
@@ -2216,6 +2240,40 @@ i.fab.fa-telegram-plane {
 }
 /** MODAL LOGIN END */
 
+/** Account detail */
+.account-props-holder {
+    width: 90%;
+    margin: auto auto;
+
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#updateSide, #deleteSide {
+    flex: 0 0 50%;
+    height: 280px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shadow-label-small {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    padding-top: 10px;
+    background: linear-gradient(to right, hsl(202, 97%, 26%), transparent);
+    background: -moz-linear-gradient(to right, hsl(202, 97%, 26%), transparent);
+}
+.red-shadow-label{
+    background: linear-gradient(to right, hsl(2, 98%, 26%), transparent);
+    background: -moz-linear-gradient(to right, hsl(0, 98%, 26%), transparent);
+}
 /** Elements End here */
 
 /** RESPONSIVE PART */
