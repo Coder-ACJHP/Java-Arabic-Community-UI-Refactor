@@ -2239,7 +2239,68 @@ i.fab.fa-telegram-plane {
     height: 35px;
 }
 /** MODAL LOGIN END */
+/** Error page */
+#master-background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -99;
+}
+.error-container {
+    width: 60%;
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color: transparent;
 
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#error-holder {
+    margin: 10% auto 0 auto;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+.error-code {
+    font-size: 15em;
+    color: white;
+    text-align: center;
+
+}
+.error-message {
+    margin-top: 5%;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.button-container {
+    width: 55%;
+    margin: 7% auto 4% auto;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button-container > button {
+    margin: auto;
+}
+.error-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 13px;
+    text-align: center;
+    color: #808080;
+}
+#error-mini-logo {
+    width: 15px;
+    height: 15px;
+}
+/** Error page end */
 /** Account detail */
 .account-props-holder {
     width: 90%;
