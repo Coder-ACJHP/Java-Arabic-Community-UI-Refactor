@@ -1178,8 +1178,23 @@ select:-webkit-autofill {
     height: 35px;
 }
 /** MODAL LOGIN END */
+/** USER CV START HERE */
 
+.cv-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cv-user-profile-img-container {
+    width: 200px;
+    height: 220px;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
 
+/** USER CV END HERE */
 /** SEND SUGGESTION PAGE START HERE */
 
 #suggestion-form {

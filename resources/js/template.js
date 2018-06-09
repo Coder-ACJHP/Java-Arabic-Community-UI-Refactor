@@ -102,7 +102,10 @@ function animateButtonIcon(buttonName) {
         const el = document.querySelector(buttonName);
         if (el) {
             el.addEventListener('click', ()=> {
-                document.querySelector('.fas.fa-spinner').style.display = 'inline-block';
+                const elem = document.querySelector('.fas.fa-spinner');
+                if (elem) {
+                    elem.style.display = 'inline-block';
+                }
                 if (el.id === 'go-to-suggestion-form') {
                     window.location.href = 'sendSuggestion.html';
                 }
@@ -160,4 +163,27 @@ if (closeX && closeBtn) {
     }
     closeModal(closeX);
     closeModal(closeBtn);
+}
+
+let commentModalTrigger = document.getElementById('comment-modal-trigger');
+if(commentModalTrigger) {
+    commentModalTrigger.onclick = () => {
+        const modalFrame = document.querySelector('.comment-modal');
+        if(clickCount == 0) {
+            modalFrame.style.display = 'block';
+            clickCount = 1;
+        } else {
+            modalFrame.style.display = 'none';
+            clickCount = 0;
+        }
+    }
+
+
+    function closeCommentModal() {
+        const closeCommentModal = document.querySelector('.comment-modal-close');
+        closeCommentModal.onclick = () => {
+            document.querySelector('.comment-modal').style.display = 'none';
+        }
+    }
+    closeCommentModal();
 }
